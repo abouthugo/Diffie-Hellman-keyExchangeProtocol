@@ -14,7 +14,7 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class Program {
-    private static Random rand = new Random(); // Random generator
+    private static Random rand = new Random(System.currentTimeMillis()); // Random generator with seed
 
     public static void main(String[] args) {
 

@@ -20,7 +20,7 @@ public class User {
     }
 
     private BigInteger generateNum(BigInteger bound){
-        Random rand = new Random();
+        Random rand = new Random(System.currentTimeMillis());
         int bits = bound.bitLength();
         int accuracy = 100;
         BigInteger res = new BigInteger(bits, accuracy, rand).mod(bound);
