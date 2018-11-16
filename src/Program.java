@@ -41,6 +41,7 @@ public class Program {
         System.out.println("Alice selected: " + Alice.getChosenNum());
         System.out.println("Bob selected: " + Bob.getChosenNum());
         Alice.generateMessage(); // Generate the message to send to Bob: g^a mod p
+//        System.exit(1);
         System.out.println("Alice sent to Bob: " + Alice.getMessage());
         Bob.generateMessage(); // Generate the message to send to Alice: g^b mod p
         System.out.println("Bob sent to Alice: " + Bob.getMessage());

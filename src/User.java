@@ -36,7 +36,7 @@ public class User {
     }
 
     public void generateMessage(){
-        message = g.pow(chosenNum.intValue()).mod(p);
+        message = g.modPow(chosenNum, p);
     }
 
     public BigInteger getMessage(){
@@ -45,6 +45,6 @@ public class User {
 
     /* Computes (A)^b mod p | (B)^a mod p */
     public BigInteger decryptKey(BigInteger K){
-        return K.pow(chosenNum.intValue()).mod(p);
+        return K.modPow(chosenNum, p);
     }
 }
